@@ -1,0 +1,29 @@
+{
+  "Env": "local",
+  "Port": "6080",
+  "AppName": "api-template",
+  "ClientConfig": {
+    "Timeout": 15,
+    "IdleConnTimeout": 30,
+    "MaxIdleConsPerHost": 1,
+    "MaxConsPerHost": 1
+  },
+  "DatabaseConfigs": [
+    {
+      "Name": "PSQL",
+      "Database": "PSQL_DB",
+      "Server": "localhost:5432",
+      "Username": "postgres",
+      "Password": "password",
+      "Scheme": "postgres"
+    }
+  ],
+  "ServiceConfigs": [
+    {
+      "Name": "FinHub",
+      "URL": "https://finnhub.io/",
+      "ApiKeyEnvironmentVariable": "cr4kc1pr01qodf9v2i2gcr4kc1pr01qodf9v2i30",
+      "PublicKeyEnvironmentVariable": "EXAMPLE_PUBLIC_KEY"
+    }
+  ]
+}
